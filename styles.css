@@ -1,14 +1,79 @@
-.container {
-    background: black;
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: cornflowerblue;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1);
+    filter:saturate(2);
+}
+
+.active {
+    transform: scale(1.1);
+    filter: saturate(2);
+}
+
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    /* border: 4px solid orange; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.left-side.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid green; */
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 1em;
+}
+
+button {
+    background: #b35a59;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+div.right-side.container {
+    /* background: black; */
+    /* border: 4px solid blue; */
+    margin: 1em;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(16, 20px);
-    grid-template-rows: repeat(16, 20px);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     grid-gap: 1px;
+    /* border: 4px solid red; */
+    width: 400px;
+    height: 400px;
 }
 
 .squareDiv {
-    background: green;
+    background: rgb(245, 233, 213);
 }
