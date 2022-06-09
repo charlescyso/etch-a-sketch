@@ -1,2 +1,6 @@
 # etch-a-sketch
 Interactive Etch-A-Sketch!
+
+Reflection:
+
+Of all the ass kicking the projects have done to me, this was the peak. DOM manipulation is a weak point for me at the moment and I'm still wrapping my head around it. I had to look into functions and methods I've not heard of such as cloneNode. I had to use different loops and would often forget which one to use (for and while). I also had to use grid which I've never used before and only got by because I used stackoverflow. I'm aware that in later lessons, grid will be taught so I wasn't really looking to fully undertand it at the time. I went off of the instructions, since it asked for the squares to change on hover, I decided that they change on mousemove only if mousedown was true, so I had to use two event listeners. I'm sure there was a more efficient way of writing this since I'm trying to aim to only use one event listener, but I couldn't find anything. Everything else was pretty straight forward, such as toggling active mode with css (thank god for classList), and the random color picker thanks for DOM manipulation. Still a lot to learn but I was proud to have worked on this project using little reference!
